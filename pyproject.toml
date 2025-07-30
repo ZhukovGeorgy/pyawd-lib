@@ -12,11 +12,18 @@ description = "Suite for processing AWD files"
 readme = "README.md"
 license = { file="LICENSE.md" }
 requires-python = ">=3.7"
+dependencies = [
+    "numpy",
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+
+[project.scripts]
+awd-converter = "src.main:main"
+awd-converter-gui = "src.gui_main:main"
 
 [project.urls]
 "Homepage" = "https://github.com/ProjectOpenOrbit/pyawd-lib"
